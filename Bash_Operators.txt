@@ -1,0 +1,72 @@
+======================================================================
+                  GUIA DE OPERADORES DO BASH
+======================================================================
+
+1. OPERADORES DE COMPARAÇÃO (Para Números)
+----------------------------------------------------------------------
+No Bash, usamos letras em vez de símbolos matemáticos tradicionais
+para comparar números inteiros. O truque para memorizar é lembrar
+que eles são abreviações de palavras em inglês.
+
+  -eq  : Igual a (equal)
+  -ne  : Diferente de (not equal)
+  -lt  : Menor que (less than)
+  -le  : Menor ou igual a (less than or equal)
+  -gt  : Maior que (greater than)
+  -ge  : Maior ou igual a (greater than or equal)
+
+
+2. OPERADORES DE TEXTO (Strings)
+----------------------------------------------------------------------
+Quando você quer comparar palavras ou textos, o Bash volta a usar
+os símbolos que estamos mais acostumados.
+
+  =    : Igual a                  | Ex: "Maria" = "Maria" (Verdadeiro)
+  !=   : Diferente de             | Ex: "Maçã" != "Banana" (Verdadeiro)
+  <    : Vem antes no alfabeto    | Ex: "A" < "B"
+  >    : Vem depois no alfabeto   | Ex: "Z" > "A"
+
+(Nota: O Bash usa a tabela ASCII para definir a "ordem alfabética",
+diferenciando maiúsculas de minúsculas).
+
+
+3. OPERADORES MATEMÁTICOS (Aritméticos)
+----------------------------------------------------------------------
+São os símbolos clássicos da matemática para fazer contas básicas.
+
+  +    : Adição
+  -    : Subtração
+  *    : Multiplicação
+  /    : Divisão
+  %    : Módulo (Mostra o resto de uma divisão)
+
+*Observação sobre Exponenciação: O Bash puro não sabe calcular
+potências. Para isso, use ferramentas externas como 'bc' ou 'awk'.
+
+
+4. OPERADORES LÓGICOS
+----------------------------------------------------------------------
+Eles servem para juntar duas ou mais perguntas ao mesmo tempo.
+
+  &&   : E (AND)
+         Só é verdade se TODAS as condições forem verdadeiras.
+         Ex: Se for de maior && tiver ingresso = pode entrar.
+
+  ||   : OU (OR)
+         É verdade se PELO MENOS UMA condição for verdadeira.
+
+  !    : NÃO (NOT)
+         Inverte a lógica. Se a resposta era "Sim", vira "Não".
+
+
+5. OPERADORES DE TESTE DE ARQUIVO
+----------------------------------------------------------------------
+Eles verificam o estado de arquivos e pastas no seu computador.
+
+  -e   : Esse arquivo ou pasta existe?
+  -d   : Isso é um diretório (uma pasta)?
+  -f   : Isso é um arquivo comum (file)?
+         (Garante que não é uma pasta ou atalho)
+  -s   : Esse arquivo tem algum conteúdo?
+         (Se estiver totalmente vazio, ele retorna falso)
+======================================================================
