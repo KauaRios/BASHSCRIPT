@@ -1,4 +1,4 @@
-=#!/bin/bash
+#!/bin/bash
 set -e  # para o script se algum comando falhar
 
 read -p "Digite a mensagem de commit: " messagecommit
